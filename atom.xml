@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://zhleternity.github.io/"/>
-  <updated>2017-02-24T08:18:51.115Z</updated>
+  <updated>2017-02-28T07:43:14.631Z</updated>
   <id>http://zhleternity.github.io/</id>
   
   <author>
@@ -14,6 +14,95 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Learn to train and predict model under MXNet</title>
+    <link href="http://zhleternity.github.io/2017/02/28/Learn-to-train-and-predict-model-under-MXNet/"/>
+    <id>http://zhleternity.github.io/2017/02/28/Learn-to-train-and-predict-model-under-MXNet/</id>
+    <published>2017-02-28T01:53:45.335Z</published>
+    <updated>2017-02-28T07:43:14.631Z</updated>
+    
+    <content type="html"><![CDATA[<p>##Prepare the input data<br>Because the input data’s formt of MXNet is rec,so we must turn the image into the .rec format,as folow:</p>
+<p>First, we prepare some face images data stored in ‘test_face’ file:</p>
+<p><img src="http://i.imgur.com/A1vbdS7.png" alt=""></p>
+<p>  step1:build the txt or lst format from the images<br>Now,we have so many images in hand.Next,we make some changes to them that generate a list or a txt about the images.As for the list or txt,its format as folllows:</p>
+<p><img src="http://i.imgur.com/69EmuV4.png" alt=""><br>To see explicitly,we can see an image below:</p>
+<p><img src="http://i.imgur.com/nGcVVdW.png" alt=""></p>
+<p>Of course, we still need the test.lst or test.txt.</p>
+<p>  step2:generate the .rec from txt or lst</p>
+<p>Under our MXNet root diretory,we can see</p>
+<p><img src="http://i.imgur.com/KKjUbzZ.png" alt=""></p>
+<p>so,we can build the rec doc by using ‘im2rec’.</p>
+<p>The comman as folows:</p>
+<p><img src="http://i.imgur.com/RpqcNnZ.png" alt=""></p>
+<p>Here,we can see three parameters.They are:</p>
+<p>the first param: the path of your lst or txt have been build;</p>
+<p>the second one: the path of your images;</p>
+<p>the third one: the path of your .rec.</p>
+<p>OK,so far we have the rec doc of train data,but we still lack the rec of test data.In that,we can generate the test.rec with the same method.Finally,you can get four files:</p>
+<p><img src="http://i.imgur.com/C2Um9eF.png" alt=""></p>
+<p>Good luck! </p>
+<a id="more"></a>
+<p>##Construct the net<br>In this step,we can construct the net ourselves,but at first best do not.Because we can use the off-the-shelf models or net to achieve more higher use.And furthermore,it can save twists and turns at first.And it is so-called ‘standing on the shoulders of giants’.Hence,the simplest way is to make a little change on the off-th-shelf net.</p>
+<p>As for the off-the-shelf examples,we can find under ‘mxnet/examples/image-classification/‘ and ‘mxnet/tests/python/‘ .</p>
+<p>step1:New a folder named ‘MyTrainMxnet’;the folder path is freewill;</p>
+<p>step2:Copy four files below to th new folder ‘MyTrainMxnet’;</p>
+<p><img src="http://i.imgur.com/CxEZ7uL.png" alt=""></p>
+<p>Attention:Here we choose the ineption-bn-28-small net,of course, you can choose others,e.g alexnet..</p>
+<p>step3:Let’s make some changes.</p>
+<p>1.Rename the ‘symbol_inception-bn-28-small.py’ as ‘my-inception.py’;</p>
+<p>2.Rename the ‘train_mnist.py’ as ‘train_face.py’;</p>
+<p>3.Open ‘train_face.py’ and do some changes;</p>
+<p><img src="http://i.imgur.com/VaqYxSF.png" alt=""></p>
+<p><img src="http://i.imgur.com/qwSMJeE.png" alt=""></p>
+<p><img src="http://i.imgur.com/0f8EGow.png" alt=""></p>
+<p>Delete the ‘symbol’,otherwise your model file must begin with ‘symbol’.</p>
+<p>##Train the model</p>
+<p>Of course we can choose not  do these changes.Instead,we can add ‘–network’ and ‘–data-dir’ in the command,as folows:</p>
+<p><img src="http://i.imgur.com/PmhYA4P.png" alt=""></p>
+<p>In addition, we can add other params if we need in the command above.</p>
+<p>Attention:If you want to save the trained-well model after every epoch,please must add ‘–model-prefix’.And you will get it when making prediction afterwards.</p>
+<p><img src="http://i.imgur.com/oaNWGT0.png" alt=""></p>
+<p>Ok,the training step may need much time when cpu-only.So we can wait in patience.</p>
+<p>##Make a prediction</p>
+<p>When you complete the training work,you will find:</p>
+<p><img src="http://i.imgur.com/zZXCneQ.png" alt=""></p>
+<p>Now,we can make a prediction using the test data.</p>
+<p>First,we need write a prediction file named ‘predict_face.py’,its contents as follow:</p>
+<p><img src="http://i.imgur.com/F4bju8C.png" alt=""></p>
+<p>Attention:Remember to change the path into yours.</p>
+<p>Ok,hereto it’s over.</p>
+<p>If yu want to make predition using new data,please keep attention.</p>
+<p>Be continued!</p>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;##Prepare the input data&lt;br&gt;Because the input data’s formt of MXNet is rec,so we must turn the image into the .rec format,as folow:&lt;/p&gt;
+&lt;p&gt;First, we prepare some face images data stored in ‘test_face’ file:&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;http://i.imgur.com/A1vbdS7.png&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
+&lt;p&gt;  step1:build the txt or lst format from the images&lt;br&gt;Now,we have so many images in hand.Next,we make some changes to them that generate a list or a txt about the images.As for the list or txt,its format as folllows:&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;http://i.imgur.com/69EmuV4.png&quot; alt=&quot;&quot;&gt;&lt;br&gt;To see explicitly,we can see an image below:&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;http://i.imgur.com/nGcVVdW.png&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
+&lt;p&gt;Of course, we still need the test.lst or test.txt.&lt;/p&gt;
+&lt;p&gt;  step2:generate the .rec from txt or lst&lt;/p&gt;
+&lt;p&gt;Under our MXNet root diretory,we can see&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;http://i.imgur.com/KKjUbzZ.png&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
+&lt;p&gt;so,we can build the rec doc by using ‘im2rec’.&lt;/p&gt;
+&lt;p&gt;The comman as folows:&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;http://i.imgur.com/RpqcNnZ.png&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
+&lt;p&gt;Here,we can see three parameters.They are:&lt;/p&gt;
+&lt;p&gt;the first param: the path of your lst or txt have been build;&lt;/p&gt;
+&lt;p&gt;the second one: the path of your images;&lt;/p&gt;
+&lt;p&gt;the third one: the path of your .rec.&lt;/p&gt;
+&lt;p&gt;OK,so far we have the rec doc of train data,but we still lack the rec of test data.In that,we can generate the test.rec with the same method.Finally,you can get four files:&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;http://i.imgur.com/C2Um9eF.png&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
+&lt;p&gt;Good luck! &lt;/p&gt;
+    
+    </summary>
+    
+    
+  </entry>
   
   <entry>
     <title>my-first-blog</title>

@@ -6,7 +6,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="generator" content="Blog of zhleternity">
-    <title>my-first-blog - Blog of zhleternity</title>
+    <title>Learn to train and predict model under MXNet - Blog of zhleternity</title>
     <meta name="author" content="zhleternity">
     
     
@@ -15,33 +15,40 @@
     
         <link rel="alternate" type="application/atom+xml" title="RSS" href="/atom.xml">
     
-    <meta name="description" content="前言
-使用github pages服务搭建博客的好处有：
+    <meta name="description" content="##Prepare the input dataBecause the input data’s formt of MXNet is rec,so we must turn the image into the .rec format,as folow:
+First, we prepare some face images data stored in ‘test_face’ file:
 
-全是静态文件，访问速度快；
-免费方便，不用花一分钱就可以搭建一个自由的个人博客，不需要服务器不需要后台；
-可以随意绑定自己的域名，不仔细看的话根本看不出来你的网站是基于github的；">
+  s">
 <meta property="og:type" content="blog">
-<meta property="og:title" content="my-first-blog">
-<meta property="og:url" content="http://zhleternity.github.io/2017/02/23/my-first-blog/index.html">
+<meta property="og:title" content="Learn to train and predict model under MXNet">
+<meta property="og:url" content="http://zhleternity.github.io/2017/02/28/Learn-to-train-and-predict-model-under-MXNet/index.html">
 <meta property="og:site_name" content="Blog of zhleternity">
-<meta property="og:description" content="前言
-使用github pages服务搭建博客的好处有：
+<meta property="og:description" content="##Prepare the input dataBecause the input data’s formt of MXNet is rec,so we must turn the image into the .rec format,as folow:
+First, we prepare some face images data stored in ‘test_face’ file:
 
-全是静态文件，访问速度快；
-免费方便，不用花一分钱就可以搭建一个自由的个人博客，不需要服务器不需要后台；
-可以随意绑定自己的域名，不仔细看的话根本看不出来你的网站是基于github的；">
-<meta property="og:image" content="http://i.imgur.com/7VAktrP.jpg">
-<meta property="og:updated_time" content="2017-02-24T08:18:51.115Z">
+  s">
+<meta property="og:image" content="http://i.imgur.com/A1vbdS7.png">
+<meta property="og:image" content="http://i.imgur.com/69EmuV4.png">
+<meta property="og:image" content="http://i.imgur.com/nGcVVdW.png">
+<meta property="og:image" content="http://i.imgur.com/KKjUbzZ.png">
+<meta property="og:image" content="http://i.imgur.com/RpqcNnZ.png">
+<meta property="og:image" content="http://i.imgur.com/C2Um9eF.png">
+<meta property="og:image" content="http://i.imgur.com/CxEZ7uL.png">
+<meta property="og:image" content="http://i.imgur.com/VaqYxSF.png">
+<meta property="og:image" content="http://i.imgur.com/qwSMJeE.png">
+<meta property="og:image" content="http://i.imgur.com/0f8EGow.png">
+<meta property="og:image" content="http://i.imgur.com/PmhYA4P.png">
+<meta property="og:image" content="http://i.imgur.com/oaNWGT0.png">
+<meta property="og:image" content="http://i.imgur.com/zZXCneQ.png">
+<meta property="og:image" content="http://i.imgur.com/F4bju8C.png">
+<meta property="og:updated_time" content="2017-02-28T07:43:14.631Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="my-first-blog">
-<meta name="twitter:description" content="前言
-使用github pages服务搭建博客的好处有：
+<meta name="twitter:title" content="Learn to train and predict model under MXNet">
+<meta name="twitter:description" content="##Prepare the input dataBecause the input data’s formt of MXNet is rec,so we must turn the image into the .rec format,as folow:
+First, we prepare some face images data stored in ‘test_face’ file:
 
-全是静态文件，访问速度快；
-免费方便，不用花一分钱就可以搭建一个自由的个人博客，不需要服务器不需要后台；
-可以随意绑定自己的域名，不仔细看的话根本看不出来你的网站是基于github的；">
-<meta name="twitter:image" content="http://i.imgur.com/7VAktrP.jpg">
+  s">
+<meta name="twitter:image" content="http://i.imgur.com/A1vbdS7.png">
     
     
         
@@ -226,13 +233,13 @@
         <div class="post-header main-content-wrap text-left">
     
         <h1 class="post-title" itemprop="headline">
-            my-first-blog
+            Learn to train and predict model under MXNet
         </h1>
     
     <div class="post-meta">
-    <time itemprop="datePublished" datetime="2017-02-23T16:45:11+08:00">
+    <time itemprop="datePublished" datetime="2017-02-28T09:53:45+08:00">
 	
-		    23 2月 2017
+		    28 2月 2017
     	
     </time>
     
@@ -242,19 +249,58 @@
     
     <div class="post-content markdown" itemprop="articleBody">
         <div class="main-content-wrap">
-            <h1 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h1><p><img src="http://i.imgur.com/7VAktrP.jpg" alt=""></p>
-<p>使用github pages服务搭建博客的好处有：</p>
-<ol>
-<li>全是静态文件，访问速度快；</li>
-<li>免费方便，不用花一分钱就可以搭建一个自由的个人博客，不需要服务器不需要后台；</li>
-<li>可以随意绑定自己的域名，不仔细看的话根本看不出来你的网站是基于github的；</li>
-</ol>
+            <p>##Prepare the input data<br>Because the input data’s formt of MXNet is rec,so we must turn the image into the .rec format,as folow:</p>
+<p>First, we prepare some face images data stored in ‘test_face’ file:</p>
+<p><img src="http://i.imgur.com/A1vbdS7.png" alt=""></p>
+<p>  step1:build the txt or lst format from the images<br>Now,we have so many images in hand.Next,we make some changes to them that generate a list or a txt about the images.As for the list or txt,its format as folllows:</p>
+<p><img src="http://i.imgur.com/69EmuV4.png" alt=""><br>To see explicitly,we can see an image below:</p>
+<p><img src="http://i.imgur.com/nGcVVdW.png" alt=""></p>
+<p>Of course, we still need the test.lst or test.txt.</p>
+<p>  step2:generate the .rec from txt or lst</p>
+<p>Under our MXNet root diretory,we can see</p>
+<p><img src="http://i.imgur.com/KKjUbzZ.png" alt=""></p>
+<p>so,we can build the rec doc by using ‘im2rec’.</p>
+<p>The comman as folows:</p>
+<p><img src="http://i.imgur.com/RpqcNnZ.png" alt=""></p>
+<p>Here,we can see three parameters.They are:</p>
+<p>the first param: the path of your lst or txt have been build;</p>
+<p>the second one: the path of your images;</p>
+<p>the third one: the path of your .rec.</p>
+<p>OK,so far we have the rec doc of train data,but we still lack the rec of test data.In that,we can generate the test.rec with the same method.Finally,you can get four files:</p>
+<p><img src="http://i.imgur.com/C2Um9eF.png" alt=""></p>
+<p>Good luck! </p>
 <a id="more"></a>
-<ol>
-<li>数据绝对安全，基于github的版本管理，想恢复到哪个历史版本都行；</li>
-<li>博客内容可以轻松打包、转移、发布到其它平台；</li>
-<li>等等；</li>
-</ol>
+<p>##Construct the net<br>In this step,we can construct the net ourselves,but at first best do not.Because we can use the off-the-shelf models or net to achieve more higher use.And furthermore,it can save twists and turns at first.And it is so-called ‘standing on the shoulders of giants’.Hence,the simplest way is to make a little change on the off-th-shelf net.</p>
+<p>As for the off-the-shelf examples,we can find under ‘mxnet/examples/image-classification/‘ and ‘mxnet/tests/python/‘ .</p>
+<p>step1:New a folder named ‘MyTrainMxnet’;the folder path is freewill;</p>
+<p>step2:Copy four files below to th new folder ‘MyTrainMxnet’;</p>
+<p><img src="http://i.imgur.com/CxEZ7uL.png" alt=""></p>
+<p>Attention:Here we choose the ineption-bn-28-small net,of course, you can choose others,e.g alexnet..</p>
+<p>step3:Let’s make some changes.</p>
+<p>1.Rename the ‘symbol_inception-bn-28-small.py’ as ‘my-inception.py’;</p>
+<p>2.Rename the ‘train_mnist.py’ as ‘train_face.py’;</p>
+<p>3.Open ‘train_face.py’ and do some changes;</p>
+<p><img src="http://i.imgur.com/VaqYxSF.png" alt=""></p>
+<p><img src="http://i.imgur.com/qwSMJeE.png" alt=""></p>
+<p><img src="http://i.imgur.com/0f8EGow.png" alt=""></p>
+<p>Delete the ‘symbol’,otherwise your model file must begin with ‘symbol’.</p>
+<p>##Train the model</p>
+<p>Of course we can choose not  do these changes.Instead,we can add ‘–network’ and ‘–data-dir’ in the command,as folows:</p>
+<p><img src="http://i.imgur.com/PmhYA4P.png" alt=""></p>
+<p>In addition, we can add other params if we need in the command above.</p>
+<p>Attention:If you want to save the trained-well model after every epoch,please must add ‘–model-prefix’.And you will get it when making prediction afterwards.</p>
+<p><img src="http://i.imgur.com/oaNWGT0.png" alt=""></p>
+<p>Ok,the training step may need much time when cpu-only.So we can wait in patience.</p>
+<p>##Make a prediction</p>
+<p>When you complete the training work,you will find:</p>
+<p><img src="http://i.imgur.com/zZXCneQ.png" alt=""></p>
+<p>Now,we can make a prediction using the test data.</p>
+<p>First,we need write a prediction file named ‘predict_face.py’,its contents as follow:</p>
+<p><img src="http://i.imgur.com/F4bju8C.png" alt=""></p>
+<p>Attention:Remember to change the path into yours.</p>
+<p>Ok,hereto it’s over.</p>
+<p>If yu want to make predition using new data,please keep attention.</p>
+<p>Be continued!</p>
 
             
         </div>
@@ -266,7 +312,7 @@
         <ul class="post-actions post-action-nav">
             <li class="post-action">
                 
-                    <a class="post-action-btn btn btn--default tooltip--top" href="/2017/02/28/Learn-to-train-and-predict-model-under-MXNet/"  data-tooltip="Learn to train and predict model under MXNet">
+                    <a class="post-action-btn btn btn--disabled">
                 
                     <i class="fa fa-angle-left"></i>
                     <span class="hide-xs hide-sm text-small icon-ml">ANTERIOR</span>
@@ -274,7 +320,7 @@
             </li>
             <li class="post-action">
                 
-                    <a class="post-action-btn btn btn--default tooltip--top" href="/2017/02/23/hello-world/" data-tooltip="Hello World">
+                    <a class="post-action-btn btn btn--default tooltip--top" href="/2017/02/23/my-first-blog/" data-tooltip="my-first-blog">
                 
                     <span class="hide-xs hide-sm text-small icon-mr">SIGUIENTE</span>
                     <i class="fa fa-angle-right"></i>
@@ -289,17 +335,17 @@
             </a>
         </li>
         <li class="post-action hide-xs">
-            <a class="post-action-btn btn btn--default" target="new" href="https://plus.google.com/share?url=http://zhleternity.github.io/2017/02/23/my-first-blog/">
+            <a class="post-action-btn btn btn--default" target="new" href="https://plus.google.com/share?url=http://zhleternity.github.io/2017/02/28/Learn-to-train-and-predict-model-under-MXNet/">
                 <i class="fa fa-google-plus"></i>
             </a>
         </li>
         <li class="post-action hide-xs">
-            <a class="post-action-btn btn btn--default" target="new" href="https://www.facebook.com/sharer/sharer.php?u=http://zhleternity.github.io/2017/02/23/my-first-blog/">
+            <a class="post-action-btn btn btn--default" target="new" href="https://www.facebook.com/sharer/sharer.php?u=http://zhleternity.github.io/2017/02/28/Learn-to-train-and-predict-model-under-MXNet/">
                 <i class="fa fa-facebook-official"></i>
             </a>
         </li>
         <li class="post-action hide-xs">
-            <a class="post-action-btn btn btn--default" target="new" href="https://twitter.com/intent/tweet?text=http://zhleternity.github.io/2017/02/23/my-first-blog/">
+            <a class="post-action-btn btn btn--default" target="new" href="https://twitter.com/intent/tweet?text=http://zhleternity.github.io/2017/02/28/Learn-to-train-and-predict-model-under-MXNet/">
                 <i class="fa fa-twitter"></i>
             </a>
         </li>
@@ -337,7 +383,7 @@
         <ul class="post-actions post-action-nav">
             <li class="post-action">
                 
-                    <a class="post-action-btn btn btn--default tooltip--top" href="/2017/02/28/Learn-to-train-and-predict-model-under-MXNet/"  data-tooltip="Learn to train and predict model under MXNet">
+                    <a class="post-action-btn btn btn--disabled">
                 
                     <i class="fa fa-angle-left"></i>
                     <span class="hide-xs hide-sm text-small icon-ml">ANTERIOR</span>
@@ -345,7 +391,7 @@
             </li>
             <li class="post-action">
                 
-                    <a class="post-action-btn btn btn--default tooltip--top" href="/2017/02/23/hello-world/" data-tooltip="Hello World">
+                    <a class="post-action-btn btn btn--default tooltip--top" href="/2017/02/23/my-first-blog/" data-tooltip="my-first-blog">
                 
                     <span class="hide-xs hide-sm text-small icon-mr">SIGUIENTE</span>
                     <i class="fa fa-angle-right"></i>
@@ -360,17 +406,17 @@
             </a>
         </li>
         <li class="post-action hide-xs">
-            <a class="post-action-btn btn btn--default" target="new" href="https://plus.google.com/share?url=http://zhleternity.github.io/2017/02/23/my-first-blog/">
+            <a class="post-action-btn btn btn--default" target="new" href="https://plus.google.com/share?url=http://zhleternity.github.io/2017/02/28/Learn-to-train-and-predict-model-under-MXNet/">
                 <i class="fa fa-google-plus"></i>
             </a>
         </li>
         <li class="post-action hide-xs">
-            <a class="post-action-btn btn btn--default" target="new" href="https://www.facebook.com/sharer/sharer.php?u=http://zhleternity.github.io/2017/02/23/my-first-blog/">
+            <a class="post-action-btn btn btn--default" target="new" href="https://www.facebook.com/sharer/sharer.php?u=http://zhleternity.github.io/2017/02/28/Learn-to-train-and-predict-model-under-MXNet/">
                 <i class="fa fa-facebook-official"></i>
             </a>
         </li>
         <li class="post-action hide-xs">
-            <a class="post-action-btn btn btn--default" target="new" href="https://twitter.com/intent/tweet?text=http://zhleternity.github.io/2017/02/23/my-first-blog/">
+            <a class="post-action-btn btn btn--default" target="new" href="https://twitter.com/intent/tweet?text=http://zhleternity.github.io/2017/02/28/Learn-to-train-and-predict-model-under-MXNet/">
                 <i class="fa fa-twitter"></i>
             </a>
         </li>
@@ -390,17 +436,17 @@
                 <div id="share-options-bar" class="share-options-bar" data-behavior="3">
     <ul class="share-options">
         <li class="share-option">
-            <a class="share-option-btn" target="new" href="https://plus.google.com/share?url=http://zhleternity.github.io/2017/02/23/my-first-blog/">
+            <a class="share-option-btn" target="new" href="https://plus.google.com/share?url=http://zhleternity.github.io/2017/02/28/Learn-to-train-and-predict-model-under-MXNet/">
                 <i class="fa fa-google-plus"></i><span class="">Compartir en Google Plus</span>
             </a>
         </li>
         <li class="share-option">
-            <a class="share-option-btn" target="new" href="https://www.facebook.com/sharer/sharer.php?u=http://zhleternity.github.io/2017/02/23/my-first-blog/">
+            <a class="share-option-btn" target="new" href="https://www.facebook.com/sharer/sharer.php?u=http://zhleternity.github.io/2017/02/28/Learn-to-train-and-predict-model-under-MXNet/">
                 <i class="fa fa-facebook-official"></i><span>Compartir en Facebook</span>
             </a>
         </li>
         <li class="share-option">
-            <a class="share-option-btn" target="new" href="https://twitter.com/intent/tweet?text=http://zhleternity.github.io/2017/02/23/my-first-blog/">
+            <a class="share-option-btn" target="new" href="https://twitter.com/intent/tweet?text=http://zhleternity.github.io/2017/02/28/Learn-to-train-and-predict-model-under-MXNet/">
                 <i class="fa fa-twitter"></i><span>Compartir en Twitter</span>
             </a>
         </li>

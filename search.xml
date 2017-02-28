@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<search>
+  
+    
+    <entry>
+      <title><![CDATA[Learn to train and predict model under MXNet]]></title>
+      <url>%2F2017%2F02%2F28%2FLearn-to-train-and-predict-model-under-MXNet%2F</url>
+      <content type="text"><![CDATA[##Prepare the input dataBecause the input data’s formt of MXNet is rec,so we must turn the image into the .rec format,as folow: First, we prepare some face images data stored in ‘test_face’ file: step1:build the txt or lst format from the imagesNow,we have so many images in hand.Next,we make some changes to them that generate a list or a txt about the images.As for the list or txt,its format as folllows: To see explicitly,we can see an image below: Of course, we still need the test.lst or test.txt. step2:generate the .rec from txt or lst Under our MXNet root diretory,we can see so,we can build the rec doc by using ‘im2rec’. The comman as folows: Here,we can see three parameters.They are: the first param: the path of your lst or txt have been build; the second one: the path of your images; the third one: the path of your .rec. OK,so far we have the rec doc of train data,but we still lack the rec of test data.In that,we can generate the test.rec with the same method.Finally,you can get four files: Good luck! ##Construct the netIn this step,we can construct the net ourselves,but at first best do not.Because we can use the off-the-shelf models or net to achieve more higher use.And furthermore,it can save twists and turns at first.And it is so-called ‘standing on the shoulders of giants’.Hence,the simplest way is to make a little change on the off-th-shelf net. As for the off-the-shelf examples,we can find under ‘mxnet/examples/image-classification/‘ and ‘mxnet/tests/python/‘ . step1:New a folder named ‘MyTrainMxnet’;the folder path is freewill; step2:Copy four files below to th new folder ‘MyTrainMxnet’; Attention:Here we choose the ineption-bn-28-small net,of course, you can choose others,e.g alexnet.. step3:Let’s make some changes. 1.Rename the ‘symbol_inception-bn-28-small.py’ as ‘my-inception.py’; 2.Rename the ‘train_mnist.py’ as ‘train_face.py’; 3.Open ‘train_face.py’ and do some changes; Delete the ‘symbol’,otherwise your model file must begin with ‘symbol’. ##Train the model Of course we can choose not do these changes.Instead,we can add ‘–network’ and ‘–data-dir’ in the command,as folows: In addition, we can add other params if we need in the command above. Attention:If you want to save the trained-well model after every epoch,please must add ‘–model-prefix’.And you will get it when making prediction afterwards. Ok,the training step may need much time when cpu-only.So we can wait in patience. ##Make a prediction When you complete the training work,you will find: Now,we can make a prediction using the test data. First,we need write a prediction file named ‘predict_face.py’,its contents as follow: Attention:Remember to change the path into yours. Ok,hereto it’s over. If yu want to make predition using new data,please keep attention. Be continued!]]></content>
+    </entry>
+
+    
+    <entry>
+      <title><![CDATA[my-first-blog]]></title>
+      <url>%2F2017%2F02%2F23%2Fmy-first-blog%2F</url>
+      <content type="text"><![CDATA[前言 使用github pages服务搭建博客的好处有： 全是静态文件，访问速度快； 免费方便，不用花一分钱就可以搭建一个自由的个人博客，不需要服务器不需要后台； 可以随意绑定自己的域名，不仔细看的话根本看不出来你的网站是基于github的； 数据绝对安全，基于github的版本管理，想恢复到哪个历史版本都行； 博客内容可以轻松打包、转移、发布到其它平台； 等等；]]></content>
+    </entry>
+
+    
+    <entry>
+      <title><![CDATA[Hello World]]></title>
+      <url>%2F2017%2F02%2F23%2Fhello-world%2F</url>
+      <content type="text"><![CDATA[Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub. Quick StartCreate a new post1$ hexo new "My New Post" More info: Writing Run server1$ hexo server More info: Server Generate static files1$ hexo generate More info: Generating Deploy to remote sites1$ hexo deploy More info: Deployment]]></content>
+    </entry>
+
+    
+  
+  
+</search>

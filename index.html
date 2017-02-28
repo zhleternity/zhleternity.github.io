@@ -212,6 +212,62 @@
             <div class="postShorten-header">
                 <h1 class="postShorten-title" itemprop="headline">
                     
+                        <a class="link-unstyled" href="/2017/02/28/Learn-to-train-and-predict-model-under-MXNet/">
+                            Learn to train and predict model under MXNet
+                        </a>
+                    
+                </h1>
+                <div class="postShorten-meta">
+    <time itemprop="datePublished" datetime="2017-02-28T09:53:45+08:00">
+	
+		    28 2月 2017
+    	
+    </time>
+    
+</div>
+
+            </div>
+            
+                <div class="postShorten-excerpt" itemprop="articleBody">
+                    <p>##Prepare the input data<br>Because the input data’s formt of MXNet is rec,so we must turn the image into the .rec format,as folow:</p>
+<p>First, we prepare some face images data stored in ‘test_face’ file:</p>
+<p><img src="http://i.imgur.com/A1vbdS7.png" alt=""></p>
+<p>  step1:build the txt or lst format from the images<br>Now,we have so many images in hand.Next,we make some changes to them that generate a list or a txt about the images.As for the list or txt,its format as folllows:</p>
+<p><img src="http://i.imgur.com/69EmuV4.png" alt=""><br>To see explicitly,we can see an image below:</p>
+<p><img src="http://i.imgur.com/nGcVVdW.png" alt=""></p>
+<p>Of course, we still need the test.lst or test.txt.</p>
+<p>  step2:generate the .rec from txt or lst</p>
+<p>Under our MXNet root diretory,we can see</p>
+<p><img src="http://i.imgur.com/KKjUbzZ.png" alt=""></p>
+<p>so,we can build the rec doc by using ‘im2rec’.</p>
+<p>The comman as folows:</p>
+<p><img src="http://i.imgur.com/RpqcNnZ.png" alt=""></p>
+<p>Here,we can see three parameters.They are:</p>
+<p>the first param: the path of your lst or txt have been build;</p>
+<p>the second one: the path of your images;</p>
+<p>the third one: the path of your .rec.</p>
+<p>OK,so far we have the rec doc of train data,but we still lack the rec of test data.In that,we can generate the test.rec with the same method.Finally,you can get four files:</p>
+<p><img src="http://i.imgur.com/C2Um9eF.png" alt=""></p>
+<p>Good luck! </p>
+                    
+                        <a href="/2017/02/28/Learn-to-train-and-predict-model-under-MXNet/" class="postShorten-excerpt_link link">
+                            Seguir leyendo
+                        </a>
+                        
+                    
+                </div>
+            
+        </div>
+        
+    </article>
+    
+    
+    <article class="postShorten postShorten--thumbnailimg-right" itemscope itemType="http://schema.org/BlogPosting">
+        <div class="postShorten-wrap">
+            
+            <div class="postShorten-header">
+                <h1 class="postShorten-title" itemprop="headline">
+                    
                         <a class="link-unstyled" href="/2017/02/23/my-first-blog/">
                             my-first-blog
                         </a>
@@ -366,3 +422,4 @@
 
 
 </html>
+<a href="https://github.com/zhleternity"><img style="position: absolute; top: 0; right: 0; border: 0;" src="https://camo.githubusercontent.com/e7bbb0521b397edbd5fe43e7f760759336b5e05f/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f6769746875622f726962626f6e732f666f726b6d655f72696768745f677265656e5f3030373230302e706e67" alt="Fork me on GitHub" data-canonical-src="https://s3.amazonaws.com/github/ribbons/forkme_right_green_007200.png"></a>
