@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://zhleternity.github.io/"/>
-  <updated>2017-04-27T09:11:11.004Z</updated>
+  <updated>2017-04-27T09:17:25.685Z</updated>
   <id>http://zhleternity.github.io/</id>
   
   <author>
@@ -20,7 +20,7 @@
     <link href="http://zhleternity.github.io/2017/04/27/How-to-generate-rec-file-with-im2rec-py-in-MXNet/"/>
     <id>http://zhleternity.github.io/2017/04/27/How-to-generate-rec-file-with-im2rec-py-in-MXNet/</id>
     <published>2017-04-27T08:38:39.000Z</published>
-    <updated>2017-04-27T09:11:11.004Z</updated>
+    <updated>2017-04-27T09:17:25.685Z</updated>
     
     <content type="html"><![CDATA[<p>[TOC]</p>
 <hr>
@@ -67,6 +67,8 @@
 &lt;p&gt;##第一步：生成list文件&lt;br&gt;首先，在你的MXNet目录下找到im2rec.py的位置：&lt;br&gt;&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;
     
     </summary>
+    
+      <category term="MXNet" scheme="http://zhleternity.github.io/categories/MXNet/"/>
     
     
       <category term="MXNet" scheme="http://zhleternity.github.io/tags/MXNet/"/>
