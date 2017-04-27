@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://zhleternity.github.io/"/>
-  <updated>2017-04-27T09:30:57.149Z</updated>
+  <updated>2017-04-27T09:35:50.909Z</updated>
   <id>http://zhleternity.github.io/</id>
   
   <author>
@@ -20,11 +20,11 @@
     <link href="http://zhleternity.github.io/2017/04/27/How-to-generate-rec-file-with-im2rec-py-in-MXNet/"/>
     <id>http://zhleternity.github.io/2017/04/27/How-to-generate-rec-file-with-im2rec-py-in-MXNet/</id>
     <published>2017-04-27T08:38:39.000Z</published>
-    <updated>2017-04-27T09:30:57.149Z</updated>
+    <updated>2017-04-27T09:35:50.909Z</updated>
     
     <content type="html"><![CDATA[<p>[TOC]</p>
 <hr>
-<p>##第一步：生成list文件<br>首先，在你的MXNet目录下找到im2rec.py的位置：</p>
+<h2 id="第一步：生成list文件"><a href="#第一步：生成list文件" class="headerlink" title="第一步：生成list文件"></a>第一步：生成list文件</h2><p>首先，在你的MXNet目录下找到im2rec.py的位置：</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">~/mxnet/tools/im2rec.py</div></pre></td></tr></table></figure>
 <p>其次，准备好你要用来生成rec文件的数据集，存放在某个目录下，如：</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">/home/xxx/data/</div></pre></td></tr></table></figure>
@@ -53,7 +53,7 @@
 <hr>
 <p>执行完这个命令，你会发现生成两个文件：myData_train.lst和myData_val.lst</p>
 <hr>
-<p>##第二步：生成rec文件<br>有了第一步生成的list文件，我们就可以很easy的生成mxnet需要的文件格式rec文件了。</p>
+<h2 id="第二步：生成rec文件"><a href="#第二步：生成rec文件" class="headerlink" title="第二步：生成rec文件"></a>第二步：生成rec文件</h2><p>有了第一步生成的list文件，我们就可以很easy的生成mxnet需要的文件格式rec文件了。</p>
 <blockquote>
 <p>python ~/mxnet/tools/im2rec.py –num-thread 4 –pass-through 1 myData /home/xxx/data/</p>
 </blockquote>
@@ -68,8 +68,7 @@
     
       &lt;p&gt;[TOC]&lt;/p&gt;
 &lt;hr&gt;
-&lt;p&gt;##第一步：生成list文件&lt;br&gt;首先，在你的MXNet目录下找到im2rec.py的位置：&lt;/p&gt;
-&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;
+&lt;h2 id=&quot;第一步：生成list文件&quot;&gt;&lt;a href=&quot;#第一步：生成list文件&quot; class=&quot;headerlink&quot; title=&quot;第一步：生成list文件&quot;&gt;&lt;/a&gt;第一步：生成list文件&lt;/h2&gt;&lt;p&gt;首先，在你的MXNet目
     
     </summary>
     
@@ -91,17 +90,16 @@
     <link href="http://zhleternity.github.io/2017/02/28/Learn-to-train-and-predict-model-under-MXNet/"/>
     <id>http://zhleternity.github.io/2017/02/28/Learn-to-train-and-predict-model-under-MXNet/</id>
     <published>2017-02-28T04:12:30.000Z</published>
-    <updated>2017-04-27T09:27:23.550Z</updated>
+    <updated>2017-04-27T09:38:13.285Z</updated>
     
-    <content type="html"><![CDATA[<p>##Prepare the input data<br>Because the input data’s formt of MXNet is rec,so we must turn the image into the .rec format,as folow:</p>
+    <content type="html"><![CDATA[<h2 id="Prepare-the-input-data"><a href="#Prepare-the-input-data" class="headerlink" title="Prepare the input data"></a>Prepare the input data</h2><p>Because the input data’s formt of MXNet is rec,so we must turn the image into the .rec format,as folow:</p>
 <p>First, we prepare some face images data stored in ‘test_face’ file:</p>
 <p><img src="http://i.imgur.com/A1vbdS7.png" alt=""></p>
-<p>  step1:build the txt or lst format from the images<br>Now,we have so many images in hand.Next,we make some changes to them that generate a list or a txt about the images.As for the list or txt,its format as folllows:</p>
+<h3 id="step1-build-the-txt-or-lst-format-from-the-images"><a href="#step1-build-the-txt-or-lst-format-from-the-images" class="headerlink" title="step1:build the txt or lst format from the images"></a>step1:build the txt or lst format from the images</h3><p>Now,we have so many images in hand.Next,we make some changes to them that generate a list or a txt about the images.As for the list or txt,its format as folllows:</p>
 <p><img src="http://i.imgur.com/69EmuV4.png" alt=""><br>To see explicitly,we can see an image below:</p>
 <p><img src="http://i.imgur.com/nGcVVdW.png" alt=""></p>
 <p>Of course, we still need the test.lst or test.txt.</p>
-<p>  step2:generate the .rec from txt or lst</p>
-<p>Under our MXNet root diretory,we can see</p>
+<h3 id="step2-generate-the-rec-from-txt-or-lst"><a href="#step2-generate-the-rec-from-txt-or-lst" class="headerlink" title="step2:generate the .rec from txt or lst"></a>step2:generate the .rec from txt or lst</h3><p>Under our MXNet root diretory,we can see</p>
 <p><img src="http://i.imgur.com/KKjUbzZ.png" alt=""></p>
 <p>so,we can build the rec doc by using ‘im2rec’.</p>
 <p>The comman as folows:</p>
@@ -114,14 +112,11 @@
 <p><img src="http://i.imgur.com/C2Um9eF.png" alt=""></p>
 <p>Good luck! </p>
 <a id="more"></a>
-<p>##Construct the net<br>In this step,we can construct the net ourselves,but at first best do not.Because we can use the off-the-shelf models or net to achieve more higher use.And furthermore,it can save twists and turns at first.And it is so-called ‘standing on the shoulders of giants’.Hence,the simplest way is to make a little change on the off-th-shelf net.</p>
+<h2 id="Construct-the-net"><a href="#Construct-the-net" class="headerlink" title="Construct the net"></a>Construct the net</h2><p>In this step,we can construct the net ourselves,but at first best do not.Because we can use the off-the-shelf models or net to achieve more higher use.And furthermore,it can save twists and turns at first.And it is so-called ‘standing on the shoulders of giants’.Hence,the simplest way is to make a little change on the off-th-shelf net.</p>
 <p>As for the off-the-shelf examples,we can find under ‘mxnet/examples/image-classification/‘ and ‘mxnet/tests/python/‘ .</p>
-<p>step1:New a folder named ‘MyTrainMxnet’;the folder path is freewill;</p>
-<p>step2:Copy four files below to th new folder ‘MyTrainMxnet’;</p>
-<p><img src="http://i.imgur.com/CxEZ7uL.png" alt=""></p>
+<h3 id="step1-New-a-folder-named-‘MyTrainMxnet’-the-folder-path-is-freewill"><a href="#step1-New-a-folder-named-‘MyTrainMxnet’-the-folder-path-is-freewill" class="headerlink" title="step1:New a folder named ‘MyTrainMxnet’;the folder path is freewill;"></a>step1:New a folder named ‘MyTrainMxnet’;the folder path is freewill;</h3><h3 id="step2-Copy-four-files-below-to-th-new-folder-‘MyTrainMxnet’"><a href="#step2-Copy-four-files-below-to-th-new-folder-‘MyTrainMxnet’" class="headerlink" title="step2:Copy four files below to th new folder ‘MyTrainMxnet’;"></a>step2:Copy four files below to th new folder ‘MyTrainMxnet’;</h3><p><img src="http://i.imgur.com/CxEZ7uL.png" alt=""></p>
 <p>Attention:Here we choose the ineption-bn-28-small net,of course, you can choose others,e.g alexnet..</p>
-<p>step3:Let’s make some changes.</p>
-<p>1.Rename the ‘symbol_inception-bn-28-small.py’ as ‘my-inception.py’;</p>
+<h3 id="step3-Let’s-make-some-changes"><a href="#step3-Let’s-make-some-changes" class="headerlink" title="step3:Let’s make some changes."></a>step3:Let’s make some changes.</h3><p>1.Rename the ‘symbol_inception-bn-28-small.py’ as ‘my-inception.py’;</p>
 <p>2.Rename the ‘train_mnist.py’ as ‘train_face.py’;</p>
 <p>3.Open ‘train_face.py’ and do some changes;</p>
 <p><img src="http://i.imgur.com/VaqYxSF.png" alt=""></p>
@@ -135,8 +130,7 @@
 <p>Attention:If you want to save the trained-well model after every epoch,please must add ‘–model-prefix’.And you will get it when making prediction afterwards.</p>
 <p><img src="http://i.imgur.com/oaNWGT0.png" alt=""></p>
 <p>Ok,the training step may need much time when cpu-only.So we can wait in patience.</p>
-<p>##Make a prediction</p>
-<p>When you complete the training work,you will find:</p>
+<h2 id="Make-a-prediction"><a href="#Make-a-prediction" class="headerlink" title="Make a prediction"></a>Make a prediction</h2><p>When you complete the training work,you will find:</p>
 <p><img src="http://i.imgur.com/zZXCneQ.png" alt=""></p>
 <p>Now,we can make a prediction using the test data.</p>
 <p>First,we need write a prediction file named ‘predict_face.py’,its contents as follow:</p>

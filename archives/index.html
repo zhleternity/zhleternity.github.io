@@ -6,7 +6,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="generator" content="Blog of zhleternity">
-    <title>Archivos - Blog of zhleternity</title>
+    <title>Archives - Blog of zhleternity</title>
     <meta name="author" content="zhleternity">
     
     
@@ -221,11 +221,11 @@
                 <div class="postShorten-meta">
     <time itemprop="datePublished" datetime="2017-04-27T16:38:39+08:00">
 	
-		    27 4月 2017
+		    4月 27, 2017
     	
     </time>
     
-        <span>en </span>
+        <span>in </span>
         
     <a class="category-link" href="/categories/MXNet/">MXNet</a>
 
@@ -238,7 +238,7 @@
                 <div class="postShorten-content" itemprop="articleBody">
                     <p>[TOC]</p>
 <hr>
-<p>##第一步：生成list文件<br>首先，在你的MXNet目录下找到im2rec.py的位置：</p>
+<h2 id="第一步：生成list文件"><a href="#第一步：生成list文件" class="headerlink" title="第一步：生成list文件"></a>第一步：生成list文件</h2><p>首先，在你的MXNet目录下找到im2rec.py的位置：</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">~/mxnet/tools/im2rec.py</div></pre></td></tr></table></figure>
 <p>其次，准备好你要用来生成rec文件的数据集，存放在某个目录下，如：</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">/home/xxx/data/</div></pre></td></tr></table></figure>
@@ -267,7 +267,7 @@
 <hr>
 <p>执行完这个命令，你会发现生成两个文件：myData_train.lst和myData_val.lst</p>
 <hr>
-<p>##第二步：生成rec文件<br>有了第一步生成的list文件，我们就可以很easy的生成mxnet需要的文件格式rec文件了。</p>
+<h2 id="第二步：生成rec文件"><a href="#第二步：生成rec文件" class="headerlink" title="第二步：生成rec文件"></a>第二步：生成rec文件</h2><p>有了第一步生成的list文件，我们就可以很easy的生成mxnet需要的文件格式rec文件了。</p>
 <blockquote>
 <p>python ~/mxnet/tools/im2rec.py –num-thread 4 –pass-through 1 myData /home/xxx/data/</p>
 </blockquote>
@@ -283,7 +283,7 @@
                     
                         <p>
                             <a href="/2017/04/27/How-to-generate-rec-file-with-im2rec-py-in-MXNet/#post-footer" class="postShorten-excerpt_link link">
-                                Comentar y compartir
+                                Comment and share
                             </a>
                         </p>
                     
@@ -308,11 +308,11 @@
                 <div class="postShorten-meta">
     <time itemprop="datePublished" datetime="2017-02-28T12:12:30+08:00">
 	
-		    28 2月 2017
+		    2月 28, 2017
     	
     </time>
     
-        <span>en </span>
+        <span>in </span>
         
     <a class="category-link" href="/categories/DL/">DL</a>
 
@@ -323,15 +323,14 @@
             </div>
             
                 <div class="postShorten-excerpt" itemprop="articleBody">
-                    <p>##Prepare the input data<br>Because the input data’s formt of MXNet is rec,so we must turn the image into the .rec format,as folow:</p>
+                    <h2 id="Prepare-the-input-data"><a href="#Prepare-the-input-data" class="headerlink" title="Prepare the input data"></a>Prepare the input data</h2><p>Because the input data’s formt of MXNet is rec,so we must turn the image into the .rec format,as folow:</p>
 <p>First, we prepare some face images data stored in ‘test_face’ file:</p>
 <p><img src="http://i.imgur.com/A1vbdS7.png" alt=""></p>
-<p>  step1:build the txt or lst format from the images<br>Now,we have so many images in hand.Next,we make some changes to them that generate a list or a txt about the images.As for the list or txt,its format as folllows:</p>
+<h3 id="step1-build-the-txt-or-lst-format-from-the-images"><a href="#step1-build-the-txt-or-lst-format-from-the-images" class="headerlink" title="step1:build the txt or lst format from the images"></a>step1:build the txt or lst format from the images</h3><p>Now,we have so many images in hand.Next,we make some changes to them that generate a list or a txt about the images.As for the list or txt,its format as folllows:</p>
 <p><img src="http://i.imgur.com/69EmuV4.png" alt=""><br>To see explicitly,we can see an image below:</p>
 <p><img src="http://i.imgur.com/nGcVVdW.png" alt=""></p>
 <p>Of course, we still need the test.lst or test.txt.</p>
-<p>  step2:generate the .rec from txt or lst</p>
-<p>Under our MXNet root diretory,we can see</p>
+<h3 id="step2-generate-the-rec-from-txt-or-lst"><a href="#step2-generate-the-rec-from-txt-or-lst" class="headerlink" title="step2:generate the .rec from txt or lst"></a>step2:generate the .rec from txt or lst</h3><p>Under our MXNet root diretory,we can see</p>
 <p><img src="http://i.imgur.com/KKjUbzZ.png" alt=""></p>
 <p>so,we can build the rec doc by using ‘im2rec’.</p>
 <p>The comman as folows:</p>
@@ -345,7 +344,7 @@
 <p>Good luck! </p>
                     
                         <a href="/2017/02/28/Learn-to-train-and-predict-model-under-MXNet/" class="postShorten-excerpt_link link">
-                            Seguir leyendo
+                            Continue reading
                         </a>
                         
                     
@@ -370,7 +369,7 @@
                 <div class="postShorten-meta">
     <time itemprop="datePublished" datetime="2017-02-23T16:21:07+08:00">
 	
-		    23 2月 2017
+		    2月 23, 2017
     	
     </time>
     
@@ -395,7 +394,7 @@
                     
                         <p>
                             <a href="/2017/02/23/hello-world/#post-footer" class="postShorten-excerpt_link link">
-                                Comentar y compartir
+                                Comment and share
                             </a>
                         </p>
                     
@@ -409,7 +408,7 @@
     <ul class="pagination">
         
         
-        <li class="pagination-number">página 1 de 1</li>
+        <li class="pagination-number">page 1 of 1</li>
     </ul>
 </div>
 
