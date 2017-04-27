@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://zhleternity.github.io/"/>
-  <updated>2017-04-27T09:17:25.685Z</updated>
+  <updated>2017-04-27T09:30:57.149Z</updated>
   <id>http://zhleternity.github.io/</id>
   
   <author>
@@ -20,12 +20,14 @@
     <link href="http://zhleternity.github.io/2017/04/27/How-to-generate-rec-file-with-im2rec-py-in-MXNet/"/>
     <id>http://zhleternity.github.io/2017/04/27/How-to-generate-rec-file-with-im2rec-py-in-MXNet/</id>
     <published>2017-04-27T08:38:39.000Z</published>
-    <updated>2017-04-27T09:17:25.685Z</updated>
+    <updated>2017-04-27T09:30:57.149Z</updated>
     
     <content type="html"><![CDATA[<p>[TOC]</p>
 <hr>
-<p>##第一步：生成list文件<br>首先，在你的MXNet目录下找到im2rec.py的位置：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">~/mxnet/tools/im2rec.py</div></pre></td></tr></table></figure></p>
-<p>其次，准备好你要用来生成rec文件的数据集，存放在某个目录下，如：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">/home/xxx/data/</div></pre></td></tr></table></figure></p>
+<p>##第一步：生成list文件<br>首先，在你的MXNet目录下找到im2rec.py的位置：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">~/mxnet/tools/im2rec.py</div></pre></td></tr></table></figure>
+<p>其次，准备好你要用来生成rec文件的数据集，存放在某个目录下，如：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">/home/xxx/data/</div></pre></td></tr></table></figure>
 <p>现在，我们可以开始生成list文件了，文件后缀为：.lst</p>
 <blockquote>
 <p> python ~/mxnet/tools/im2rec.py –list True –recursive True  –train-ratio 0.9 myData /home/xxx/data/ </p>
@@ -36,8 +38,10 @@
 <p><strong>–recursive</strong>：递归的遍历你的所有数据集，要设为True；</p>
 <p><strong>–train-ratio</strong>：用来将你的全部数据集拆分成两部分：训练集（train）和交叉验证集（val），具体多少作为训练集，多少作为验证集，就由这个参数来确定；</p>
 <p><strong>–test-ratio</strong>：同上，分成训练集和测试集两部分；</p>
-<p><strong>–exts</strong>：这个是你数据的后缀（注，这里我们一般说的图片数据），目前的MXNet只支持两种图片格式：jpg和jpeg，所以如果你的图片是png格式，可以对im2rec.py作如下修改：<br>将：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">cgroup.add_argument(&apos;--exts&apos;, type=list, default=[&apos;.jpeg&apos;, &apos;.jpg&apos;], help=&apos;list of acceptable image extensions.&apos;)</div></pre></td></tr></table></figure></p>
-<p>改成：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">cgroup.add_argument(&apos;--exts&apos;, type=list, default=[&apos;.jpeg&apos;, &apos;.jpg&apos;, &apos;.png&apos;], help=&apos;list of acceptable image extensions.&apos;)</div></pre></td></tr></table></figure></p>
+<p><strong>–exts</strong>：这个是你数据的后缀（注，这里我们一般说的图片数据），目前的MXNet只支持两种图片格式：jpg和jpeg，所以如果你的图片是png格式，可以对im2rec.py作如下修改：<br>将：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">cgroup.add_argument(&apos;--exts&apos;, type=list, default=[&apos;.jpeg&apos;, &apos;.jpg&apos;], help=&apos;list of acceptable image extensions.&apos;)</div></pre></td></tr></table></figure>
+<p>改成：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">cgroup.add_argument(&apos;--exts&apos;, type=list, default=[&apos;.jpeg&apos;, &apos;.jpg&apos;, &apos;.png&apos;], help=&apos;list of acceptable image extensions.&apos;)</div></pre></td></tr></table></figure>
 <p>就OK了。</p>
 <p><strong>prefix</strong>：这里指的是你要生成list文件的前缀名，我这里命名为myData；</p>
 <p><strong>root</strong>：这里指的是你的图片数据存放的路径；</p>
@@ -64,7 +68,8 @@
     
       &lt;p&gt;[TOC]&lt;/p&gt;
 &lt;hr&gt;
-&lt;p&gt;##第一步：生成list文件&lt;br&gt;首先，在你的MXNet目录下找到im2rec.py的位置：&lt;br&gt;&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;
+&lt;p&gt;##第一步：生成list文件&lt;br&gt;首先，在你的MXNet目录下找到im2rec.py的位置：&lt;/p&gt;
+&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;
     
     </summary>
     
@@ -86,7 +91,7 @@
     <link href="http://zhleternity.github.io/2017/02/28/Learn-to-train-and-predict-model-under-MXNet/"/>
     <id>http://zhleternity.github.io/2017/02/28/Learn-to-train-and-predict-model-under-MXNet/</id>
     <published>2017-02-28T04:12:30.000Z</published>
-    <updated>2017-02-28T08:03:05.688Z</updated>
+    <updated>2017-04-27T09:27:23.550Z</updated>
     
     <content type="html"><![CDATA[<p>##Prepare the input data<br>Because the input data’s formt of MXNet is rec,so we must turn the image into the .rec format,as folow:</p>
 <p>First, we prepare some face images data stored in ‘test_face’ file:</p>
@@ -147,6 +152,8 @@
       Learning how to train a model using our own dat,and make predictions using the trained model.
     
     </summary>
+    
+      <category term="DL" scheme="http://zhleternity.github.io/categories/DL/"/>
     
     
       <category term="mxnet" scheme="http://zhleternity.github.io/tags/mxnet/"/>

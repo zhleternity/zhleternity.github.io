@@ -6,7 +6,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="generator" content="Blog of zhleternity">
-    <title>Etiqueta: im2rec - Blog of zhleternity</title>
+    <title>Categoría: DL - Blog of zhleternity</title>
     <meta name="author" content="zhleternity">
     
     
@@ -18,7 +18,7 @@
     <meta name="description" content="The best of all ways.To lengthen our days.To steal some hours from the night.">
 <meta property="og:type" content="blog">
 <meta property="og:title" content="Blog of zhleternity">
-<meta property="og:url" content="http://zhleternity.github.io/tags/im2rec/index.html">
+<meta property="og:url" content="http://zhleternity.github.io/categories/DL/index.html">
 <meta property="og:site_name" content="Blog of zhleternity">
 <meta property="og:description" content="The best of all ways.To lengthen our days.To steal some hours from the night.">
 <meta name="twitter:card" content="summary">
@@ -207,27 +207,27 @@
 <section class="postShorten-group main-content-wrap">
     
     
-    <article class="postShorten postShorten--thumbnailimg-bottom" itemscope itemType="http://schema.org/BlogPosting">
+    <article class="postShorten postShorten--thumbnailimg-right" itemscope itemType="http://schema.org/BlogPosting">
         <div class="postShorten-wrap">
             
             <div class="postShorten-header">
                 <h1 class="postShorten-title" itemprop="headline">
                     
-                        <a class="link-unstyled" href="/2017/04/27/How-to-generate-rec-file-with-im2rec-py-in-MXNet/">
-                            How to generate .rec file with im2rec.py in MXNet
+                        <a class="link-unstyled" href="/2017/02/28/Learn-to-train-and-predict-model-under-MXNet/">
+                            Learn to train and predict model under MXNet
                         </a>
                     
                 </h1>
                 <div class="postShorten-meta">
-    <time itemprop="datePublished" datetime="2017-04-27T16:38:39+08:00">
+    <time itemprop="datePublished" datetime="2017-02-28T12:12:30+08:00">
 	
-		    27 4月 2017
+		    28 2月 2017
     	
     </time>
     
         <span>en </span>
         
-    <a class="category-link" href="/categories/MXNet/">MXNet</a>
+    <a class="category-link" href="/categories/DL/">DL</a>
 
 
     
@@ -235,57 +235,32 @@
 
             </div>
             
-                <div class="postShorten-content" itemprop="articleBody">
-                    <p>[TOC]</p>
-<hr>
-<p>##第一步：生成list文件<br>首先，在你的MXNet目录下找到im2rec.py的位置：</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">~/mxnet/tools/im2rec.py</div></pre></td></tr></table></figure>
-<p>其次，准备好你要用来生成rec文件的数据集，存放在某个目录下，如：</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">/home/xxx/data/</div></pre></td></tr></table></figure>
-<p>现在，我们可以开始生成list文件了，文件后缀为：.lst</p>
-<blockquote>
-<p> python ~/mxnet/tools/im2rec.py –list True –recursive True  –train-ratio 0.9 myData /home/xxx/data/ </p>
-</blockquote>
-<hr>
-<p>对上面的参数进行解释：</p>
-<p><strong>–list</strong>：当要生成list文件时，这个参数一定要设为True，表示当前用来生成的list文件；默认是生成rec文件；</p>
-<p><strong>–recursive</strong>：递归的遍历你的所有数据集，要设为True；</p>
-<p><strong>–train-ratio</strong>：用来将你的全部数据集拆分成两部分：训练集（train）和交叉验证集（val），具体多少作为训练集，多少作为验证集，就由这个参数来确定；</p>
-<p><strong>–test-ratio</strong>：同上，分成训练集和测试集两部分；</p>
-<p><strong>–exts</strong>：这个是你数据的后缀（注，这里我们一般说的图片数据），目前的MXNet只支持两种图片格式：jpg和jpeg，所以如果你的图片是png格式，可以对im2rec.py作如下修改：<br>将：</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">cgroup.add_argument(&apos;--exts&apos;, type=list, default=[&apos;.jpeg&apos;, &apos;.jpg&apos;], help=&apos;list of acceptable image extensions.&apos;)</div></pre></td></tr></table></figure>
-<p>改成：</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">cgroup.add_argument(&apos;--exts&apos;, type=list, default=[&apos;.jpeg&apos;, &apos;.jpg&apos;, &apos;.png&apos;], help=&apos;list of acceptable image extensions.&apos;)</div></pre></td></tr></table></figure>
-<p>就OK了。</p>
-<p><strong>prefix</strong>：这里指的是你要生成list文件的前缀名，我这里命名为myData；</p>
-<p><strong>root</strong>：这里指的是你的图片数据存放的路径；</p>
-<p>不一一列出了，如果你想要知道更多的参数用法，可以如下：</p>
-<blockquote>
-<p>python ~/mxnet/tools/im2rec.py –help</p>
-</blockquote>
-<p>或者你直接打开im2rec.py文件进行查看；</p>
-<hr>
-<p>执行完这个命令，你会发现生成两个文件：myData_train.lst和myData_val.lst</p>
-<hr>
-<p>##第二步：生成rec文件<br>有了第一步生成的list文件，我们就可以很easy的生成mxnet需要的文件格式rec文件了。</p>
-<blockquote>
-<p>python ~/mxnet/tools/im2rec.py –num-thread 4 –pass-through 1 myData /home/xxx/data/</p>
-</blockquote>
-<p>上面命令中的参数跟第一步差不多，有一个参数要注意：</p>
-<p><strong>–pass-through</strong>: 设为1，即跳过矩阵变换，否则会报错：未知的array type；</p>
-<p>myData就是第一步中生成.lst文件的前缀，这里用它来生成rec；</p>
-<p>执行完这条命令，你就会看到两个文件：myData_train.rec和myData_val.rec</p>
-<p>结束。</p>
-
+                <div class="postShorten-excerpt" itemprop="articleBody">
+                    <p>##Prepare the input data<br>Because the input data’s formt of MXNet is rec,so we must turn the image into the .rec format,as folow:</p>
+<p>First, we prepare some face images data stored in ‘test_face’ file:</p>
+<p><img src="http://i.imgur.com/A1vbdS7.png" alt=""></p>
+<p>  step1:build the txt or lst format from the images<br>Now,we have so many images in hand.Next,we make some changes to them that generate a list or a txt about the images.As for the list or txt,its format as folllows:</p>
+<p><img src="http://i.imgur.com/69EmuV4.png" alt=""><br>To see explicitly,we can see an image below:</p>
+<p><img src="http://i.imgur.com/nGcVVdW.png" alt=""></p>
+<p>Of course, we still need the test.lst or test.txt.</p>
+<p>  step2:generate the .rec from txt or lst</p>
+<p>Under our MXNet root diretory,we can see</p>
+<p><img src="http://i.imgur.com/KKjUbzZ.png" alt=""></p>
+<p>so,we can build the rec doc by using ‘im2rec’.</p>
+<p>The comman as folows:</p>
+<p><img src="http://i.imgur.com/RpqcNnZ.png" alt=""></p>
+<p>Here,we can see three parameters.They are:</p>
+<p>the first param: the path of your lst or txt have been build;</p>
+<p>the second one: the path of your images;</p>
+<p>the third one: the path of your .rec.</p>
+<p>OK,so far we have the rec doc of train data,but we still lack the rec of test data.In that,we can generate the test.rec with the same method.Finally,you can get four files:</p>
+<p><img src="http://i.imgur.com/C2Um9eF.png" alt=""></p>
+<p>Good luck! </p>
                     
+                        <a href="/2017/02/28/Learn-to-train-and-predict-model-under-MXNet/" class="postShorten-excerpt_link link">
+                            Seguir leyendo
+                        </a>
                         
-                    
-                    
-                        <p>
-                            <a href="/2017/04/27/How-to-generate-rec-file-with-im2rec-py-in-MXNet/#post-footer" class="postShorten-excerpt_link link">
-                                Comentar y compartir
-                            </a>
-                        </p>
                     
                 </div>
             
@@ -302,6 +277,7 @@
 </div>
 
 </section>
+
 
 
                 <footer id="footer" class="main-content-wrap">
