@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://zhleternity.github.io/"/>
-  <updated>2017-04-27T08:40:14.410Z</updated>
+  <updated>2017-04-27T09:11:11.004Z</updated>
   <id>http://zhleternity.github.io/</id>
   
   <author>
@@ -20,7 +20,7 @@
     <link href="http://zhleternity.github.io/2017/04/27/How-to-generate-rec-file-with-im2rec-py-in-MXNet/"/>
     <id>http://zhleternity.github.io/2017/04/27/How-to-generate-rec-file-with-im2rec-py-in-MXNet/</id>
     <published>2017-04-27T08:38:39.000Z</published>
-    <updated>2017-04-27T08:40:14.410Z</updated>
+    <updated>2017-04-27T09:11:11.004Z</updated>
     
     <content type="html"><![CDATA[<p>[TOC]</p>
 <hr>
@@ -68,6 +68,14 @@
     
     </summary>
     
+    
+      <category term="MXNet" scheme="http://zhleternity.github.io/tags/MXNet/"/>
+    
+      <category term="im2rec" scheme="http://zhleternity.github.io/tags/im2rec/"/>
+    
+      <category term="python" scheme="http://zhleternity.github.io/tags/python/"/>
+    
+      <category term="rec" scheme="http://zhleternity.github.io/tags/rec/"/>
     
   </entry>
   
