@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://zhleternity.github.io/"/>
-  <updated>2017-04-27T09:35:50.909Z</updated>
+  <updated>2017-05-03T09:42:32.957Z</updated>
   <id>http://zhleternity.github.io/</id>
   
   <author>
@@ -14,6 +14,44 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Comparision of Some Mainstream Frameworks on Deep Learning</title>
+    <link href="http://zhleternity.github.io/2017/05/03/Comparision-of-Some-Mainstream-Frameworks-on-Deep-Learning/"/>
+    <id>http://zhleternity.github.io/2017/05/03/Comparision-of-Some-Mainstream-Frameworks-on-Deep-Learning/</id>
+    <published>2017-05-03T09:39:32.000Z</published>
+    <updated>2017-05-03T09:42:32.957Z</updated>
+    
+    <content type="html"><![CDATA[<p>##1.简介<br><img src="http://img.blog.csdn.net/20170503171543841?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvZXRlcm5pdHkxMTE4Xw==/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast" alt="这里写图片描述"></p>
+<p>##2.文档与性能<br><img src="http://img.blog.csdn.net/20170503171621846?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvZXRlcm5pdHkxMTE4Xw==/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast" alt="这里写图片描述"></p>
+<p>##3.网络与模型能力<br><img src="http://img.blog.csdn.net/20170503171652831?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvZXRlcm5pdHkxMTE4Xw==/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast" alt="这里写图片描述"><br><img src="http://img.blog.csdn.net/20170503171707452?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvZXRlcm5pdHkxMTE4Xw==/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast" alt="这里写图片描述"></p>
+<p>##4.生态与维护<br><img src="http://img.blog.csdn.net/20170503171733764?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvZXRlcm5pdHkxMTE4Xw==/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast" alt="这里写图片描述"></p>
+<p>##5.框架搭建与应用<br><img src="http://img.blog.csdn.net/20170503171747499?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvZXRlcm5pdHkxMTE4Xw==/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast" alt="这里写图片描述"></p>
+<p>##6.架构</p>
+<p>###6.1 TensorFlow<br><img src="http://img.blog.csdn.net/20170503172339402?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvZXRlcm5pdHkxMTE4Xw==/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast" alt="这里写图片描述"></p>
+<p>###6.2 Caffe<br><img src="http://img.blog.csdn.net/20170503172356512?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvZXRlcm5pdHkxMTE4Xw==/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast" alt="这里写图片描述"></p>
+<p>###6.3 MXNet<br><img src="http://img.blog.csdn.net/20170503172414204?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvZXRlcm5pdHkxMTE4Xw==/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast" alt="这里写图片描述"><br><img src="http://img.blog.csdn.net/20170503172428829?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvZXRlcm5pdHkxMTE4Xw==/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast" alt="这里写图片描述"></p>
+<p>###6.4 Paddle<br>主要从以下几个方面入手：多机并行架构、多GPU并行架构、sequence序列模型以及大规模稀疏训练；</p>
+<p>###6.5 CNTK<br><img src="http://img.blog.csdn.net/20170503172452580?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvZXRlcm5pdHkxMTE4Xw==/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast" alt="这里写图片描述"></p>
+<p>##7.总结<br>1)．    有关图像的问题使用caffe很方便，训练只需要写prototxt；<br>2)．    Caffe是目前产品化最多的库；<br>3)．    应该多关注TensorFlow，毕竟有Google这样的亲爹；<br>4)．    用TensorBoard去观察训练的状态；<br>5)．    可以了解和学习一下mxnet，对显存利用率高；</p>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;##1.简介&lt;br&gt;&lt;img src=&quot;http://img.blog.csdn.net/20170503171543841?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvZXRlcm5pdHkxMTE4Xw==/font/5a6
+    
+    </summary>
+    
+      <category term="DL" scheme="http://zhleternity.github.io/categories/DL/"/>
+    
+    
+      <category term="dl" scheme="http://zhleternity.github.io/tags/dl/"/>
+    
+      <category term="framework" scheme="http://zhleternity.github.io/tags/framework/"/>
+    
+      <category term="comparision" scheme="http://zhleternity.github.io/tags/comparision/"/>
+    
+  </entry>
   
   <entry>
     <title>How to generate .rec file with im2rec.py in MXNet</title>
