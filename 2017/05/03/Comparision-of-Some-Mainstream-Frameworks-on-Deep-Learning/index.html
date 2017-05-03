@@ -15,34 +15,32 @@
     
         <link rel="alternate" type="application/atom+xml" title="RSS" href="/atom.xml">
     
-    <meta name="description" content="##1.简介
-##2.文档与性能
-##3.网络与模型能力
-##4.生态与维护
-##5.框架搭建与应用
-##6.架构
-###6.1 TensorFlow
-###6.2 Caffe
-###6.3 MXNet
-###6.4 Paddle主要从以下几个方面入手：多机并行架构、多GPU并行架构、sequence序列模型以及大规模稀疏训练；
-###6.5 CNTK
-##7.总结1)．    有关图像的问题使用">
+    <meta name="description" content="1.简介
+2.文档与性能
+3.网络与模型能力
+4.生态与维护
+5.框架搭建与应用
+6.架构6.1 TensorFlow
+6.2 Caffe
+6.3 MXNet
+6.4 Paddle主要从以下几个方面入手：多机并行架构、多GPU并行架构、sequence序列模型以及大规模稀疏训练；
+6.5 CNTK
+7.总结1)．    有关图像的问题使用caffe很方便，训练只需要写prototxt；2)．">
 <meta property="og:type" content="blog">
 <meta property="og:title" content="Comparision of Some Mainstream Frameworks on Deep Learning">
 <meta property="og:url" content="http://zhleternity.github.io/2017/05/03/Comparision-of-Some-Mainstream-Frameworks-on-Deep-Learning/index.html">
 <meta property="og:site_name" content="Blog of zhleternity">
-<meta property="og:description" content="##1.简介
-##2.文档与性能
-##3.网络与模型能力
-##4.生态与维护
-##5.框架搭建与应用
-##6.架构
-###6.1 TensorFlow
-###6.2 Caffe
-###6.3 MXNet
-###6.4 Paddle主要从以下几个方面入手：多机并行架构、多GPU并行架构、sequence序列模型以及大规模稀疏训练；
-###6.5 CNTK
-##7.总结1)．    有关图像的问题使用">
+<meta property="og:description" content="1.简介
+2.文档与性能
+3.网络与模型能力
+4.生态与维护
+5.框架搭建与应用
+6.架构6.1 TensorFlow
+6.2 Caffe
+6.3 MXNet
+6.4 Paddle主要从以下几个方面入手：多机并行架构、多GPU并行架构、sequence序列模型以及大规模稀疏训练；
+6.5 CNTK
+7.总结1)．    有关图像的问题使用caffe很方便，训练只需要写prototxt；2)．">
 <meta property="og:image" content="http://img.blog.csdn.net/20170503171543841?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvZXRlcm5pdHkxMTE4Xw==/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast">
 <meta property="og:image" content="http://img.blog.csdn.net/20170503171621846?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvZXRlcm5pdHkxMTE4Xw==/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast">
 <meta property="og:image" content="http://img.blog.csdn.net/20170503171652831?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvZXRlcm5pdHkxMTE4Xw==/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast">
@@ -54,21 +52,20 @@
 <meta property="og:image" content="http://img.blog.csdn.net/20170503172414204?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvZXRlcm5pdHkxMTE4Xw==/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast">
 <meta property="og:image" content="http://img.blog.csdn.net/20170503172428829?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvZXRlcm5pdHkxMTE4Xw==/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast">
 <meta property="og:image" content="http://img.blog.csdn.net/20170503172452580?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvZXRlcm5pdHkxMTE4Xw==/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast">
-<meta property="og:updated_time" content="2017-05-03T09:42:32.957Z">
+<meta property="og:updated_time" content="2017-05-03T09:44:59.348Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Comparision of Some Mainstream Frameworks on Deep Learning">
-<meta name="twitter:description" content="##1.简介
-##2.文档与性能
-##3.网络与模型能力
-##4.生态与维护
-##5.框架搭建与应用
-##6.架构
-###6.1 TensorFlow
-###6.2 Caffe
-###6.3 MXNet
-###6.4 Paddle主要从以下几个方面入手：多机并行架构、多GPU并行架构、sequence序列模型以及大规模稀疏训练；
-###6.5 CNTK
-##7.总结1)．    有关图像的问题使用">
+<meta name="twitter:description" content="1.简介
+2.文档与性能
+3.网络与模型能力
+4.生态与维护
+5.框架搭建与应用
+6.架构6.1 TensorFlow
+6.2 Caffe
+6.3 MXNet
+6.4 Paddle主要从以下几个方面入手：多机并行架构、多GPU并行架构、sequence序列模型以及大规模稀疏训练；
+6.5 CNTK
+7.总结1)．    有关图像的问题使用caffe很方便，训练只需要写prototxt；2)．">
 <meta name="twitter:image" content="http://img.blog.csdn.net/20170503171543841?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvZXRlcm5pdHkxMTE4Xw==/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast">
     
     
@@ -276,18 +273,17 @@
     
     <div class="post-content markdown" itemprop="articleBody">
         <div class="main-content-wrap">
-            <p>##1.简介<br><img src="http://img.blog.csdn.net/20170503171543841?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvZXRlcm5pdHkxMTE4Xw==/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast" alt="这里写图片描述"></p>
-<p>##2.文档与性能<br><img src="http://img.blog.csdn.net/20170503171621846?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvZXRlcm5pdHkxMTE4Xw==/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast" alt="这里写图片描述"></p>
-<p>##3.网络与模型能力<br><img src="http://img.blog.csdn.net/20170503171652831?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvZXRlcm5pdHkxMTE4Xw==/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast" alt="这里写图片描述"><br><img src="http://img.blog.csdn.net/20170503171707452?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvZXRlcm5pdHkxMTE4Xw==/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast" alt="这里写图片描述"></p>
-<p>##4.生态与维护<br><img src="http://img.blog.csdn.net/20170503171733764?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvZXRlcm5pdHkxMTE4Xw==/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast" alt="这里写图片描述"></p>
-<p>##5.框架搭建与应用<br><img src="http://img.blog.csdn.net/20170503171747499?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvZXRlcm5pdHkxMTE4Xw==/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast" alt="这里写图片描述"></p>
-<p>##6.架构</p>
-<p>###6.1 TensorFlow<br><img src="http://img.blog.csdn.net/20170503172339402?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvZXRlcm5pdHkxMTE4Xw==/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast" alt="这里写图片描述"></p>
-<p>###6.2 Caffe<br><img src="http://img.blog.csdn.net/20170503172356512?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvZXRlcm5pdHkxMTE4Xw==/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast" alt="这里写图片描述"></p>
-<p>###6.3 MXNet<br><img src="http://img.blog.csdn.net/20170503172414204?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvZXRlcm5pdHkxMTE4Xw==/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast" alt="这里写图片描述"><br><img src="http://img.blog.csdn.net/20170503172428829?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvZXRlcm5pdHkxMTE4Xw==/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast" alt="这里写图片描述"></p>
-<p>###6.4 Paddle<br>主要从以下几个方面入手：多机并行架构、多GPU并行架构、sequence序列模型以及大规模稀疏训练；</p>
-<p>###6.5 CNTK<br><img src="http://img.blog.csdn.net/20170503172452580?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvZXRlcm5pdHkxMTE4Xw==/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast" alt="这里写图片描述"></p>
-<p>##7.总结<br>1)．    有关图像的问题使用caffe很方便，训练只需要写prototxt；<br>2)．    Caffe是目前产品化最多的库；<br>3)．    应该多关注TensorFlow，毕竟有Google这样的亲爹；<br>4)．    用TensorBoard去观察训练的状态；<br>5)．    可以了解和学习一下mxnet，对显存利用率高；</p>
+            <h2 id="1-简介"><a href="#1-简介" class="headerlink" title="1.简介"></a>1.简介</h2><p><img src="http://img.blog.csdn.net/20170503171543841?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvZXRlcm5pdHkxMTE4Xw==/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast" alt="这里写图片描述"></p>
+<h2 id="2-文档与性能"><a href="#2-文档与性能" class="headerlink" title="2.文档与性能"></a>2.文档与性能</h2><p><img src="http://img.blog.csdn.net/20170503171621846?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvZXRlcm5pdHkxMTE4Xw==/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast" alt="这里写图片描述"></p>
+<h2 id="3-网络与模型能力"><a href="#3-网络与模型能力" class="headerlink" title="3.网络与模型能力"></a>3.网络与模型能力</h2><p><img src="http://img.blog.csdn.net/20170503171652831?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvZXRlcm5pdHkxMTE4Xw==/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast" alt="这里写图片描述"><br><img src="http://img.blog.csdn.net/20170503171707452?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvZXRlcm5pdHkxMTE4Xw==/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast" alt="这里写图片描述"></p>
+<h2 id="4-生态与维护"><a href="#4-生态与维护" class="headerlink" title="4.生态与维护"></a>4.生态与维护</h2><p><img src="http://img.blog.csdn.net/20170503171733764?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvZXRlcm5pdHkxMTE4Xw==/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast" alt="这里写图片描述"></p>
+<h2 id="5-框架搭建与应用"><a href="#5-框架搭建与应用" class="headerlink" title="5.框架搭建与应用"></a>5.框架搭建与应用</h2><p><img src="http://img.blog.csdn.net/20170503171747499?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvZXRlcm5pdHkxMTE4Xw==/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast" alt="这里写图片描述"></p>
+<h2 id="6-架构"><a href="#6-架构" class="headerlink" title="6.架构"></a>6.架构</h2><h3 id="6-1-TensorFlow"><a href="#6-1-TensorFlow" class="headerlink" title="6.1 TensorFlow"></a>6.1 TensorFlow</h3><p><img src="http://img.blog.csdn.net/20170503172339402?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvZXRlcm5pdHkxMTE4Xw==/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast" alt="这里写图片描述"></p>
+<h3 id="6-2-Caffe"><a href="#6-2-Caffe" class="headerlink" title="6.2 Caffe"></a>6.2 Caffe</h3><p><img src="http://img.blog.csdn.net/20170503172356512?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvZXRlcm5pdHkxMTE4Xw==/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast" alt="这里写图片描述"></p>
+<h3 id="6-3-MXNet"><a href="#6-3-MXNet" class="headerlink" title="6.3 MXNet"></a>6.3 MXNet</h3><p><img src="http://img.blog.csdn.net/20170503172414204?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvZXRlcm5pdHkxMTE4Xw==/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast" alt="这里写图片描述"><br><img src="http://img.blog.csdn.net/20170503172428829?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvZXRlcm5pdHkxMTE4Xw==/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast" alt="这里写图片描述"></p>
+<h3 id="6-4-Paddle"><a href="#6-4-Paddle" class="headerlink" title="6.4 Paddle"></a>6.4 Paddle</h3><p>主要从以下几个方面入手：多机并行架构、多GPU并行架构、sequence序列模型以及大规模稀疏训练；</p>
+<h3 id="6-5-CNTK"><a href="#6-5-CNTK" class="headerlink" title="6.5 CNTK"></a>6.5 CNTK</h3><p><img src="http://img.blog.csdn.net/20170503172452580?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvZXRlcm5pdHkxMTE4Xw==/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast" alt="这里写图片描述"></p>
+<h2 id="7-总结"><a href="#7-总结" class="headerlink" title="7.总结"></a>7.总结</h2><p>1)．    有关图像的问题使用caffe很方便，训练只需要写prototxt；<br>2)．    Caffe是目前产品化最多的库；<br>3)．    应该多关注TensorFlow，毕竟有Google这样的亲爹；<br>4)．    用TensorBoard去观察训练的状态；<br>5)．    可以了解和学习一下mxnet，对显存利用率高；</p>
 
             
         </div>

@@ -5,7 +5,7 @@
     <entry>
       <title><![CDATA[Comparision of Some Mainstream Frameworks on Deep Learning]]></title>
       <url>%2F2017%2F05%2F03%2FComparision-of-Some-Mainstream-Frameworks-on-Deep-Learning%2F</url>
-      <content type="text"><![CDATA[##1.简介 ##2.文档与性能 ##3.网络与模型能力 ##4.生态与维护 ##5.框架搭建与应用 ##6.架构 ###6.1 TensorFlow ###6.2 Caffe ###6.3 MXNet ###6.4 Paddle主要从以下几个方面入手：多机并行架构、多GPU并行架构、sequence序列模型以及大规模稀疏训练； ###6.5 CNTK ##7.总结1)． 有关图像的问题使用caffe很方便，训练只需要写prototxt；2)． Caffe是目前产品化最多的库；3)． 应该多关注TensorFlow，毕竟有Google这样的亲爹；4)． 用TensorBoard去观察训练的状态；5)． 可以了解和学习一下mxnet，对显存利用率高；]]></content>
+      <content type="text"><![CDATA[1.简介 2.文档与性能 3.网络与模型能力 4.生态与维护 5.框架搭建与应用 6.架构6.1 TensorFlow 6.2 Caffe 6.3 MXNet 6.4 Paddle主要从以下几个方面入手：多机并行架构、多GPU并行架构、sequence序列模型以及大规模稀疏训练； 6.5 CNTK 7.总结1)． 有关图像的问题使用caffe很方便，训练只需要写prototxt；2)． Caffe是目前产品化最多的库；3)． 应该多关注TensorFlow，毕竟有Google这样的亲爹；4)． 用TensorBoard去观察训练的状态；5)． 可以了解和学习一下mxnet，对显存利用率高；]]></content>
     </entry>
 
     
