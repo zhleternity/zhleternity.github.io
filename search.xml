@@ -1,6 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title><![CDATA[How to continue to write your blog when you change your computer with hexo]]></title>
+    <url>%2F2017%2F05%2F05%2FHow-to-continue-to-write-your-blog-when-you-change-your-computer-with-hexo%2F</url>
+    <content type="text"><![CDATA[1.将你原来电脑上已经配置好并生成的hexo目录拷到你的新电脑上，注意无需拷全部，只拷如下几个目录：_config.yml package.json scaffolds/ source/ themes/ 将这些目录放到一个目录下，如：hexo／ 2.在你的新电脑上首先配置hexo环境：安装Node.js3.安装hexo，执行命令：npm install -g hexo 4.安装好之后，进入hexo／目录5.模块安装，执行命令：npm install npm install hexo-deployer-git --save npm install hexo-generator-feed --save npm install hexo-generator-sitemap --save 6.部署，执行命令： hexo g hexo deploy]]></content>
+      <categories>
+        <category>Hexo</category>
+      </categories>
+      <tags>
+        <tag>hexo</tag>
+        <tag>blog</tag>
+        <tag>change computer</tag>
+      </tags>
+  </entry>
+  <entry>
     <title><![CDATA[Hello World]]></title>
     <url>%2F2017%2F05%2F04%2Fhello-world%2F</url>
     <content type="text"><![CDATA[Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub. Quick StartCreate a new post1$ hexo new "My New Post" More info: Writing Run server1$ hexo server More info: Server Generate static files1$ hexo generate More info: Generating Deploy to remote sites1$ hexo deploy More info: Deployment]]></content>
