@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://zhleternity.github.io/"/>
-  <updated>2017-05-03T09:44:59.348Z</updated>
+  <updated>2017-02-24T08:25:54.000Z</updated>
   <id>http://zhleternity.github.io/</id>
   
   <author>
@@ -16,11 +16,38 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>Hello World</title>
+    <link href="http://zhleternity.github.io/2017/05/04/hello-world/"/>
+    <id>http://zhleternity.github.io/2017/05/04/hello-world/</id>
+    <published>2017-05-04T08:38:36.000Z</published>
+    <updated>2017-02-24T08:25:54.000Z</updated>
+    
+    <content type="html"><![CDATA[<p><img src="http://i.imgur.com/OJnBd57.jpg" alt=""><br>Welcome to <a href="https://hexo.io/" target="_blank" rel="external">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="external">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="external">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="external">GitHub</a>.</p>
+<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo new <span class="string">"My New Post"</span></div></pre></td></tr></table></figure>
+<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="external">Writing</a></p>
+<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo server</div></pre></td></tr></table></figure>
+<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="external">Server</a></p>
+<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo generate</div></pre></td></tr></table></figure>
+<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="external">Generating</a></p>
+<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo deploy</div></pre></td></tr></table></figure>
+<p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="external">Deployment</a></p>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;&lt;img src=&quot;http://i.imgur.com/OJnBd57.jpg&quot; alt=&quot;&quot;&gt;&lt;br&gt;Welcome to &lt;a href=&quot;https://hexo.io/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Hexo&lt;/a&gt;! This 
+    
+    </summary>
+    
+    
+  </entry>
+  
+  <entry>
     <title>Comparision of Some Mainstream Frameworks on Deep Learning</title>
     <link href="http://zhleternity.github.io/2017/05/03/Comparision-of-Some-Mainstream-Frameworks-on-Deep-Learning/"/>
     <id>http://zhleternity.github.io/2017/05/03/Comparision-of-Some-Mainstream-Frameworks-on-Deep-Learning/</id>
     <published>2017-05-03T09:39:32.000Z</published>
-    <updated>2017-05-03T09:44:59.348Z</updated>
+    <updated>2017-05-03T09:45:00.000Z</updated>
     
     <content type="html"><![CDATA[<h2 id="1-简介"><a href="#1-简介" class="headerlink" title="1.简介"></a>1.简介</h2><p><img src="http://img.blog.csdn.net/20170503171543841?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvZXRlcm5pdHkxMTE4Xw==/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast" alt="这里写图片描述"></p>
 <h2 id="2-文档与性能"><a href="#2-文档与性能" class="headerlink" title="2.文档与性能"></a>2.文档与性能</h2><p><img src="http://img.blog.csdn.net/20170503171621846?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvZXRlcm5pdHkxMTE4Xw==/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast" alt="这里写图片描述"></p>
@@ -57,7 +84,7 @@
     <link href="http://zhleternity.github.io/2017/04/27/How-to-generate-rec-file-with-im2rec-py-in-MXNet/"/>
     <id>http://zhleternity.github.io/2017/04/27/How-to-generate-rec-file-with-im2rec-py-in-MXNet/</id>
     <published>2017-04-27T08:38:39.000Z</published>
-    <updated>2017-04-27T09:35:50.909Z</updated>
+    <updated>2017-04-27T09:35:52.000Z</updated>
     
     <content type="html"><![CDATA[<p>[TOC]</p>
 <hr>
@@ -127,7 +154,7 @@
     <link href="http://zhleternity.github.io/2017/02/28/Learn-to-train-and-predict-model-under-MXNet/"/>
     <id>http://zhleternity.github.io/2017/02/28/Learn-to-train-and-predict-model-under-MXNet/</id>
     <published>2017-02-28T04:12:30.000Z</published>
-    <updated>2017-04-27T09:38:13.285Z</updated>
+    <updated>2017-04-27T09:38:14.000Z</updated>
     
     <content type="html"><![CDATA[<h2 id="Prepare-the-input-data"><a href="#Prepare-the-input-data" class="headerlink" title="Prepare the input data"></a>Prepare the input data</h2><p>Because the input data’s formt of MXNet is rec,so we must turn the image into the .rec format,as folow:</p>
 <p>First, we prepare some face images data stored in ‘test_face’ file:</p>
@@ -192,33 +219,6 @@
       <category term="train" scheme="http://zhleternity.github.io/tags/train/"/>
     
       <category term="predict" scheme="http://zhleternity.github.io/tags/predict/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Hello World</title>
-    <link href="http://zhleternity.github.io/2017/02/23/hello-world/"/>
-    <id>http://zhleternity.github.io/2017/02/23/hello-world/</id>
-    <published>2017-02-23T08:21:07.826Z</published>
-    <updated>2017-02-24T08:25:53.385Z</updated>
-    
-    <content type="html"><![CDATA[<p><img src="http://i.imgur.com/OJnBd57.jpg" alt=""><br>Welcome to <a href="https://hexo.io/" target="_blank" rel="external">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="external">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="external">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="external">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo new <span class="string">"My New Post"</span></div></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="external">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo server</div></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="external">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo generate</div></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="external">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo deploy</div></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="external">Deployment</a></p>
-]]></content>
-    
-    <summary type="html">
-    
-      &lt;p&gt;&lt;img src=&quot;http://i.imgur.com/OJnBd57.jpg&quot; alt=&quot;&quot;&gt;&lt;br&gt;Welcome to &lt;a href=&quot;https://hexo.io/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Hexo&lt;/a&gt;! This 
-    
-    </summary>
-    
     
   </entry>
   
