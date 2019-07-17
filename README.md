@@ -1,3 +1,3 @@
 # zhleternity.github.io
 
-This is my personal git blog using hexo-blog,update is slow,because i'm busy,Please have a look on my CSDN blog:https://blog.csdn.net/eternity1118_
+This is my personal git blog using hexo-blog(https://zhleternity.github.io/),update is slow,if you wanna to learn more,please have a look on my CSDN blog:https://blog.csdn.net/eternity1118_
